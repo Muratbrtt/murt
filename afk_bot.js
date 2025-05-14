@@ -1,4 +1,3 @@
-
 const mineflayer = require('mineflayer')
 
 const bot = mineflayer.createBot({
@@ -11,19 +10,23 @@ const bot = mineflayer.createBot({
 bot.once('spawn', () => {
   console.log('Bot sunucuya girdi.')
 
+  // İlk komutu 3 saniye sonra gönder
   setTimeout(() => {
     bot.chat('/login Mansayi00')
-    console.log('Giriş komutu gönderildi.')
+    console.log('/login komutu gönderildi.')
 
+    // Sonraki komutu 3 saniye sonra gönder
     setTimeout(() => {
       bot.chat('/emeksky')
-      console.log('Sunucuya girildi.')
+      console.log('/emeksky komutu gönderildi. AFK modu başladı.')
 
-      // Sonsuza kadar afk kal
+      // Burada sonsuz bekleme var — bot hiçbir hareket yapmaz
+
     }, 3000)
+
   }, 3000)
 })
 
 bot.on('end', () => {
-  console.log('Bot bağlantıyı kaybetti. Yeniden başlatılabilir.')
+  console.log('Bot bağlantıyı kaybetti.')
 })
