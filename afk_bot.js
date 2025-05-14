@@ -22,9 +22,9 @@ bot.once('spawn', () => {
 
       // Burada sonsuz bekleme var — bot hiçbir hareket yapmaz
 
-    }, 3000)
+    }, 5000)
 
-  }, 3000)
+  }, 5000)
 })
 
 bot.on('end', () => {
