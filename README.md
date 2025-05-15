@@ -5,7 +5,7 @@ Crackli (offline) hesapla giriş yapar, girişten sonra belirli komutları yazar
 
 ## Özellikler
 - Local account ile giriş
-- Sunucuya komut gönderme: `/login mrt123` ve `/emeksky`
+- Sunucuya komut gönderme: `/login ****` ve `/emeksky`
 - Otomatik olarak giriş yaptıktan sonra AFK moduna geçme
 
 ## Kullanım
